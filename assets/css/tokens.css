@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Design tokens — change --accent to re-theme the whole site
+   ========================================================================== */
+:root {
+  /* Colour */
+  --bg: #0a0b0f;
+  --bg-elevated: #10121a;
+  --surface: rgba(255, 255, 255, 0.035);
+  --surface-hover: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text: #eceef4;
+  --text-muted: #9ba0b0;
+  --text-dim: #6b7080;
+  --accent: #d4b878;
+  --accent-soft: rgba(212, 184, 120, 0.12);
+  --accent-glow: rgba(212, 184, 120, 0.28);
+  --accent-2: #7c8cff;
+  --success: #6ee7a8;
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --fs-xs: 0.78rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: clamp(1.4rem, 2vw + 0.8rem, 1.9rem);
+  --fs-2xl: clamp(2rem, 3.5vw + 1rem, 3rem);
+  --fs-hero: clamp(2.8rem, 7vw + 0.5rem, 5.6rem);
+
+  /* Spacing (8px scale) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  /* Shape & motion */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --shadow: 0 24px 60px -28px rgba(0, 0, 0, 0.8);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --header-h: 72px;
+  --container: 1120px;
+}
+
+[data-theme="light"] {
+  --bg: #f6f5f1;
+  --bg-elevated: #ffffff;
+  --surface: rgba(10, 11, 15, 0.03);
+  --surface-hover: rgba(10, 11, 15, 0.055);
+  --border: rgba(10, 11, 15, 0.09);
+  --border-strong: rgba(10, 11, 15, 0.18);
+  --text: #14161d;
+  --text-muted: #555a69;
+  --text-dim: #8a8f9d;
+  --accent: #8a6a22;
+  --accent-soft: rgba(138, 106, 34, 0.1);
+  --accent-glow: rgba(138, 106, 34, 0.22);
+  --accent-2: #4a5af0;
+  --shadow: 0 24px 60px -30px rgba(20, 22, 29, 0.25);
+}

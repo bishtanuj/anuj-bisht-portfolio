@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+Thumbs.db
+.env
+*.log
+.vscode/
+.idea/
+
+README.md
+robots.txt
+
+package.json
