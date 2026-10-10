@@ -177,3 +177,7 @@
   .skills__grid, .stats { grid-template-columns: 1fr; }
   .footer__inner { flex-direction: column; text-align: center; }
 }
+
+/* ---------- Recommendations grid ---------- */
+.reco__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); align-items: stretch; }
+@media (max-width: 960px) { .reco__grid { grid-template-columns: 1fr; } }

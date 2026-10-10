@@ -273,3 +273,23 @@
 
 .about__text { display: flex; flex-direction: column; gap: var(--space-4); color: var(--text-muted); font-size: var(--fs-lg); }
 .about__text strong { color: var(--text); font-weight: 500; }
+
+/* ---------- Recommendations ---------- */
+.reco { display: flex; flex-direction: column; gap: var(--space-5); margin: 0; height: 100%; }
+.reco__quote { width: 30px; height: 30px; color: var(--accent); opacity: 0.85; }
+.reco__text { margin: 0; display: flex; flex-direction: column; gap: var(--space-3); color: var(--text-muted); font-size: var(--fs-base); flex: 1; }
+.reco__author { display: flex; align-items: center; gap: var(--space-3); padding-top: var(--space-4); border-top: 1px solid var(--border); }
+.reco__avatar {
+  display: grid; place-items: center;
+  width: 44px; height: 44px; flex: none;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+.reco__name { display: block; font-weight: 500; transition: color 0.25s; }
+.reco__name:hover { color: var(--accent); }
+.reco__meta { display: block; font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--text-dim); letter-spacing: 0.06em; }
